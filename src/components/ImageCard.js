@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class ImageCard extends Component {
+class ImageCard extends Component {
     constructor(props){
         super(props)
 
@@ -26,7 +26,7 @@ export default class ImageCard extends Component {
     render() {
         const { description, urls } = this.props.image;
         return (
-            <div styele ={ { gridRowEnd : `span ${this.state.spans}`}}>
+            <div style ={ { gridRowEnd : `span ${this.state.spans}`}}>
                 <img
                     ref = {this.imageRef}
                     alt ={description}
@@ -36,3 +36,4 @@ export default class ImageCard extends Component {
         )
     }
 }
+export default ImageCard; 
